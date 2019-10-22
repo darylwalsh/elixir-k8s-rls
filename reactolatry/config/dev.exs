@@ -2,10 +2,10 @@ use Mix.Config
 
 # Configure your database
 config :reactolatry, Reactolatry.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: System.get_env("DB_USER") || "${DB_USER}",
+  password: System.get_env("DB_PASS") || "${DB_PASS}",
   database: "reactolatry_dev",
-  hostname: "localhost",
+  hostname: System.get_env("DB_HOST") || "${DB_HOST}",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

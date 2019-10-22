@@ -40,7 +40,7 @@ defmodule ReactolatryWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_reactolatry_key",
-    signing_salt: "GVczKnjI"
+    signing_salt: "tDwdhiVw"
 
   plug ReactolatryWeb.Router
 end

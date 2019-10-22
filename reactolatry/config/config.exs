@@ -13,7 +13,7 @@ config :reactolatry,
 # Configures the endpoint
 config :reactolatry, ReactolatryWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "lrBt9DUyUKKWew4hfsBGuAS1HCQ67dGmkIr8/nTT34lsFjAQxRskRF8aDpJsjAHC",
+  secret_key_base: "dYfDbAchlcDfCyXHFKvtOM2u6AwawLaWX/tvVJmYJVmptOY+Jzuw9YOzgoqhTaYg",
   render_errors: [view: ReactolatryWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Reactolatry.PubSub, adapter: Phoenix.PubSub.PG2]
 
